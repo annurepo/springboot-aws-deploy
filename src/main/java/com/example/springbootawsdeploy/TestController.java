@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping("/data")
     public String getData() {
-        return "First message from AWS ";
+        return "First message from AWS updated";
     }
 
     @GetMapping("/message")
     public String getMessage() {
-        return "Second message from AWS";
+        return "Second message from AWS updated";
     }
     
     @GetMapping("/msgadd")
     public String getMessage1() {
-        return "Third message from AWS";
+        return "Third message from AWS updated";
     }
 }
