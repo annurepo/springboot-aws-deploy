@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Logging in to Amazon ECR demo....
       - aws --version
-      #- $(aws ecr get-login --region ap-south-1 --no-include-email)
+      - $(aws ecr get-login --region us-east-2 --no-include-email)
       - aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 904474184257.dkr.ecr.us-east-2.amazonaws.com
       - # Replace with this to your repository URI
       - REPOSITORY_URI=904474184257.dkr.ecr.us-east-2.amazonaws.com/spring-demo-ecr
