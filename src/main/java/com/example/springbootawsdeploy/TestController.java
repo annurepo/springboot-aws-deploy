@@ -13,7 +13,7 @@ public class TestController {
     public String getData() {
         return "First message from AWS updated";
     }
-
+// test
 //    @GetMapping("/message")
 //    public String getMessage() {
 //        return "Second message from AWS updated";
